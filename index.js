@@ -41,9 +41,14 @@ inquirer
 //THEN an SVG file is created named `logo.svg`
 //AND the output text "Generated logo.svg" is printed in the command line
   .then((answers) => {
-    const svgContent = generateSvg(answers);
-
-    fs.writeFile('logo.svg', svgContent, (err) =>
+    if (answers.text.length > 3) {
+        console.log("Three letters only please! Try again!");
+        return; 
+    } else {
+        const svgContent = generateSvg(answers);
+        fs.writeFile('logo.svg', svgContent, (err) =>
       err ? console.log(err) : console.log('Successfully created logo.svg!')
     );
+    }
+    
   });
