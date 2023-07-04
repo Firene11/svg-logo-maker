@@ -2,7 +2,7 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./lib/generateSvg');
+const generateSvg = require('./lib/generateSvg');
 
 inquirer
   .prompt([
