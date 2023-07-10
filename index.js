@@ -2,7 +2,7 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateSvg = require('./lib/generateSvg');
+const {circle, triangle, square} = require('./lib/shapes.js');
 
 inquirer
   .prompt([
@@ -45,7 +45,7 @@ inquirer
         console.log("Three letters only please! Try again!");
         return; 
     } else {
-        const svgContent = generateSvg(answers);
+        const svgContent = shape.renderShape();
         fs.writeFile('logo.svg', svgContent, (err) =>
       err ? console.log(err) : console.log('Successfully created logo.svg!')
     );
