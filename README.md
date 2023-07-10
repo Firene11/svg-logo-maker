@@ -3,6 +3,8 @@
 ## Description
 This application uses the command line to quickly generate a new svg logo! When prompted for information about your logo, the application accepts your input and produces a logo.svg file with your chosen shape (circle, triangle, or square), shape color, and text color.
 
+From the command line, this application also uses Jest to test it's performance. 
+
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
