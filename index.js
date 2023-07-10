@@ -12,13 +12,6 @@ inquirer
       type: 'input',
       name: 'text',
       message: 'Please enter three letters',
-      validate: input => {
-        if (input.length > 0 && input.length <= 3) {
-         return true
-        } else {
-         return Promise.reject("only 3 letters please")
-        }
-     },
     },
 //WHEN I am prompted for the text color
 //THEN I can enter a color keyword (OR a hexadecimal number) <--IMPORTANT
