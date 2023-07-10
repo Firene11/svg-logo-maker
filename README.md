@@ -1,4 +1,4 @@
-# svg-logo-maker
+# Svg Logo Maker
 
 ## Description
 This application uses the command line to quickly generate a new svg logo! When prompted for information about your logo, the application accepts your input and produces a logo.svg file with your chosen shape (circle, triangle, or square), shape color, and text color.
