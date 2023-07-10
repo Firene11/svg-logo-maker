@@ -49,11 +49,11 @@ n/a
 
 ## Tests
 
-From the command line in your terminal run the commmand:
+This application uses Jest for running the unit tests and Inquirer for collecting input from the user. The test is invoked by using the following command:
 
 **npm test**
 
-I am using Jest for this request, and all tests pass.
+All tests pass.
 
 
 ## License
