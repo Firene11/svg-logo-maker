@@ -25,8 +25,13 @@ Answer the prompted questions about your logo. When all questions are answered, 
 **Watch this VIDEO to see how the app runs and tests!**
 
 ## Screenshots
+Application
 ![Application](lib/more/screenshot1.jpg) 
+
+SVG generated
 ![Application](lib/more/screenshot2.jpg) 
+
+
 ![Application](lib/more/screenshot3.jpg) 
 ![Test](lib/more/screenshot4.jpg) 
 
