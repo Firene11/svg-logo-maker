@@ -2,7 +2,7 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
-const {circle, triangle, square} = require('./lib/shapes.js');
+const {Shape, Circle, Triangle, Square} = require('./lib/shapes.js');
 
 inquirer
   .prompt([
@@ -12,6 +12,13 @@ inquirer
       type: 'input',
       name: 'text',
       message: 'Please enter three letters',
+      validate: input => {
+        if (input.length > 0 && input.length <= 3) {
+         return true
+        } else {
+         return Promise.reject("only 3 letters please")
+        }
+     },
     },
 //WHEN I am prompted for the text color
 //THEN I can enter a color keyword (OR a hexadecimal number) <--IMPORTANT
@@ -41,14 +48,28 @@ inquirer
 //THEN an SVG file is created named `logo.svg`
 //AND the output text "Generated logo.svg" is printed in the command line
   .then((answers) => {
-    if (answers.text.length > 3) {
-        console.log("Three letters only please! Try again!");
-        return; 
-    } else {
-        const svgContent = shape.renderShape();
-        fs.writeFile('logo.svg', svgContent, (err) =>
-      err ? console.log(err) : console.log('Successfully created logo.svg!')
-    );
+    let shape;
+    switch (answers.shape) {
+        case 'Triangle':
+            shape = new Triangle(answers.shapeColor, answers.textColor, answers.text)
+            break
+
+        case 'Square':
+            shape = new Square(answers.shapeColor, answers.textColor, answers.text)
+            break
+
+        case 'Circle':
+            shape = new Circle(answers.shapeColor, answers.textColor, answers.text)
+            break
     }
-    
-  });
+
+    const svgContent = shape.renderShape()
+    fs.writeFile(`examples/logo.svg`, svgContent, err => {
+        err ? console.error(err) : console.info('Successfully created logo.svg!!!')
+    })
+})
+.catch(error => {
+    console.error(error)
+})
+
+
