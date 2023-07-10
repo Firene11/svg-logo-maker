@@ -8,11 +8,12 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "test"
+    "test": "jest"
   },
   "author": "farrah hodgson",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^8.2.4"
+    "inquirer": "^8.2.4",
+    "jest": "^25.5.4"
   }
 }
