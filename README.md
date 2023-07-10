@@ -22,13 +22,13 @@ From the command line in your terminal run the commmand:
 
 Answer the prompted questions about your logo. When all questions are answered, a generated logo.svg file will be produced in the examples folder. You may rename the file in the folder so that you can generate and write more logo files!
 
-Watch this brief video to learn more
+**Watch this VIDEO to see how the app runs and tests!**
 
 ## Screenshots
 ![Application](lib/more/screenshot1.jpg) 
 ![Application](lib/more/screenshot2.jpg) 
 ![Application](lib/more/screenshot3.jpg) 
-![Application](lib/more/screenshot4.jpg) 
+![Test](lib/more/screenshot4.jpg) 
 
 ## Credits
 n/a
