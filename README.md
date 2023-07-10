@@ -8,6 +8,7 @@ This application uses the command line to quickly generate a new svg logo! When 
 - [Usage](#usage)
 - [Screenshots](#Screenshots)
 - [Credits](#credits)
+- [Tests](#tests)
 - [License](#license)
 
 ## Installation
@@ -26,17 +27,32 @@ Answer the prompted questions about your logo. When all questions are answered, 
 
 ## Screenshots
 Application
+
 ![Application](lib/more/screenshot1.jpg) 
 
 SVG generated
+
 ![Application](lib/more/screenshot2.jpg) 
 
+SVG code
 
 ![Application](lib/more/screenshot3.jpg) 
+
+Test (Jest)
+
 ![Test](lib/more/screenshot4.jpg) 
 
 ## Credits
 n/a
+
+## Tests
+
+From the command line in your terminal run the commmand:
+
+**npm test**
+
+I am using Jest for this request, and all tests pass.
+
 
 ## License
 none
