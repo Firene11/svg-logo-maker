@@ -50,7 +50,7 @@ Test (Jest)
 ![Test](lib/more/screenshot4.jpg) 
 
 ## Credits
-n/a
+http://www.w3.org/2000/svg
 
 ## Tests
 
