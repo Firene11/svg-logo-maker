@@ -8,6 +8,7 @@ From the command line, this application also uses Jest to test it's performance.
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
+- [Video](#video)
 - [Screenshots](#Screenshots)
 - [Credits](#credits)
 - [Tests](#tests)
@@ -25,7 +26,11 @@ From the command line in your terminal run the commmand:
 
 Answer the prompted questions about your logo. When all questions are answered, a generated logo.svg file will be produced in the examples folder. You may rename the file in the folder so that you can generate and write more logo files!
 
+## Video
+
 **Watch this VIDEO to see how the app runs and tests!**
+
+![Video](https://drive.google.com/file/d/14Oaowj3uehFyVMunK8R03o3p-Jemd3tI/view)
 
 ## Screenshots
 Application
