@@ -30,7 +30,7 @@ Answer the prompted questions about your logo. When all questions are answered, 
 
 **Watch this VIDEO to see how the app runs and tests!**
 
-[Watch this brief video to see how it works](https://drive.google.com/file/d/14Oaowj3uehFyVMunK8R03o3p-Jemd3tI/view)
+[Link to Video](https://drive.google.com/file/d/14Oaowj3uehFyVMunK8R03o3p-Jemd3tI/view)
 
 ## Screenshots
 Application
